@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+      <div class="col-md-8"><div class="post-title">{{post.subject}}</div></div>
+      <div class="col-md-4"><h4 class="pull-right">Likes <span class="label label-default">{{post.likes}}</span></h4></div>
+    </div>
+      Written {{post.last_modified.strftime("%b %d, %Y %H:%M %p")}} | <a href="/blog/editpost/{{post.key().id()}}">Edit</a>
+      <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
+    <div class="row">
+      <div class="col-md-12 post-content">{{post.content}}</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12 post-author"> Post by {{post.author}} </div>
+    </div>
+    <br>
+    <form method="post">
+      <div class="row">
+      <div class="btn-group btn-group-sm" role="group" aria-label="...">
+        <div class="col-md-4">
+          <button type="submit" name="likes" value="Like" class="btn btn-default">Like</button>
+          </div>
+        <div class="col-md-4">
+          <button type="submit" name="dislikes" value="Dislike" class="btn btn-default">Dislike</button>
+        </div>
+      </div>
+      </div>
+      <br>
+      <div class="row">
+        {% if error %}
+        <div class="col-md-12">
+          <div class="alert alert-warning" role="alert">{{error}}</div>
+        </div>
+        {% endif %}
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <label>Leave a comment</label>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <textarea name="content"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <button type="submit" name="insert" value="add comment" class="btn btn-default">Submit comment</button>
+        </div>
+      </div>
+      {% if comment_error %}
+      <br>
+      <div class="alert alert-danger" role="alert">Comment must contain text</div>
+      {% endif %}
+    </form>
+    <br><br>
+      <label>Comments section</label>
+      <br><br>
+    {{statuscheck}}
+    {% for c in allcomments %}
+      <div class="boxed">
+        {{ c.content }}
+      </div>
+      {{ c.author }} commented on {{ c.created.strftime("%b %d %Y %H:%M %p") }} | <a href="/blog/editcomment/{{c.key().id()}}">Modify</a>
+      <br><br>
+    {% endfor %}
+{% endblock %}

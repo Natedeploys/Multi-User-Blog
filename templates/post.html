@@ -1,0 +1,22 @@
+<div class="post">
+  <div class="post-heading">
+    <div class="post-title">
+      {{p.subject}}
+    </div>
+    <div class="post-date">
+      {{p.created.strftime("%b %d, %Y")}}
+    </div>
+  </div>
+  <div class="post-content">
+    {{p._render_text | safe}}
+  </div>
+  <br>
+  <div class="post-author"> Post by {{p.author}} </div>
+  <div>
+    <a href="/blog/postandcomments/{{p.key().id()}}">Read More...</a>
+    <!--<a href="/blog/{{p.key().id()}}">View Permalink</a>-->
+    <!--<a href="/blog/editpost/{{p.key().id()}}"> Modify</a>-->
+  </div>
+</div>
+
+
