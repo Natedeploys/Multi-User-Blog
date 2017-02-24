@@ -25,7 +25,7 @@ Coming soon.
 
 ## TODO
 
-Password or username reminder emails__
+Password or username reminder emails <br>
 Email required
 Integrate navigation menu
 Personal profile site
