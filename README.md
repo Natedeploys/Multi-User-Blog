@@ -25,6 +25,8 @@ Coming soon.
 
 ## TODO
 
+Features that I will implement in the near future
+
 Password or username reminder emails <br>
 Email required <br>
 Integrate navigation menu <br>
