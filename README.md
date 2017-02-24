@@ -26,13 +26,13 @@ Coming soon.
 ## TODO
 
 Password or username reminder emails <br>
-Email required
-Integrate navigation menu
-Personal profile site
-Advance passwords required
-Single dislike or like button
-Further styling
-Breadcrumbs
+Email required <br>
+Integrate navigation menu <br>
+Personal profile site <br>
+Advance passwords required <br>
+Single dislike or like button <br>
+Further styling <br>
+Breadcrumbs <br>
 
 ## DEMO
 
