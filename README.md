@@ -23,6 +23,17 @@ Google SDK is required for this project.
 
 Coming soon.
 
+## TODO
+
+Password or username reminder emails
+Email required
+Integrate navigation menu
+Personal profile site
+Advance passwords required
+Single dislike or like button
+Further styling
+Breadcrumbs
+
 ## DEMO
 
 Register or login with:
@@ -31,4 +42,5 @@ Username: demo
 Password: demo
 
 Live demo at http://udacity-149116.appspot.com/blog
+
 
