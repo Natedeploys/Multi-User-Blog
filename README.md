@@ -25,4 +25,10 @@ Coming soon.
 
 ## DEMO
 
+Register or login with:
+
+Username: demo
+Password: demo
+
 Live demo at http://udacity-149116.appspot.com/blog
+
