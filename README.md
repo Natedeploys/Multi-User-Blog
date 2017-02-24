@@ -5,12 +5,24 @@ A responsive Website in the format of the popular blog "Medium" using Python and
 The multi user blog project matches the given requirements. Users are able to register, log in, leave posts, leave comments, leave likes.
 As well as edit, change & delete posts, likes and comments. Google app engine and jinja2 were mainly used.
 
-blog.py holds the main back-end code, the templates in the folder are used as the front end parts.
+## FILES
 
-Installation
+blog.py - Holds the main back-end code, the templates in the folder are used as the front end parts.
 
-Simply visit the link provided and enter username: demo, password: demo.
+app.yaml - Holds the dependencies of the project.
 
-Tests
+Templates - The html, flask hybrid templates used to render the website.
 
-Each part of the project was individually checked for ease of use, functionality, bugs and authentication.
+## INSTALLATION
+
+Git clone or download ZIP file.
+You will need Python on your dev machine.
+Google SDK is required for this project.
+
+## CONFIGURATION
+
+Coming soon.
+
+## DEMO
+
+Live demo at http://udacity-149116.appspot.com/blog
