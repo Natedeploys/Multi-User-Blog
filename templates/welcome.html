@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title>Welcome to the multi-user-blog demo</title>
-  </head>
-
-  <body>
-    <h2>Login with:</h2>
-    <h2>user: demo</h2>
-    <h2>password: demo</h2>
-  </body>
+<head>
+  <link href="/static/main.css" rel="stylesheet" type="text/css"><!-- Latest compiled and minified CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <title>Multi-user Blog</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <a class="main-title" href="/blog">Multi-user Blog</a>
+      </div>
+      <div class="col-md-6 vertical-center">
+        <div class="login-area pull-right vertical-center">
+          {% if user %} <a class="login-link" href="/blog/newpost">New post</a> | {{user.name}} (<a class="login-link" href="/logout">Logout</a>) {% else %} <a class="login-link" href="/login">Login</a> | <a class="login-link" href="/signup">Register</a> {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+  <h2>Welcome to the Multi-user-blog demo!</h2>
+  <br>
+  <p>Username: demo</p>
+  <p>Password: demo</p>
+  <br>
+  <p><a class="btn btn-primary btn-lg" href="/login" role="button">Start demo</a></p>
+</div>
+  </div>
+</body>
 </html>

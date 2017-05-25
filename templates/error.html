@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="/static/main.css" rel="stylesheet" type="text/css"><!-- Latest compiled and minified CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <title>Multi-user Blog</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <a class="main-title" href="/blog">Multi-user Blog</a>
+      </div>
+      <div class="col-md-6 vertical-center">
+        <div class="login-area pull-right vertical-center">
+          {% if user %} <a class="login-link" href="/blog/newpost">New post</a> | {{user.name}} (<a class="login-link" href="/logout">Logout</a>) {% else %} <a class="login-link" href="/login">Login</a> | <a class="login-link" href="/signup">Register</a> {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+        <h2>Error 404</h2>
+    </div>
+  </div>
+</body>
+</html>
