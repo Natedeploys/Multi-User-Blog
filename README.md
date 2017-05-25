@@ -19,23 +19,6 @@ Git clone or download ZIP file.
 You will need Python on your dev machine.
 Google SDK is required for this project.
 
-## CONFIGURATION
-
-Coming soon.
-
-## TODO
-
-Features that I will implement in the near future
-
-Password or username reminder emails <br>
-Email required <br>
-Integrate navigation menu <br>
-Personal profile site <br>
-Advance passwords required <br>
-Single dislike or like button <br>
-Further styling <br>
-Breadcrumbs <br>
-
 ## DEMO
 
 Register or login with:
